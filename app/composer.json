@@ -1,5 +1,8 @@
 {
     "require": {
-        "slim/slim": "^4.10"
+        "php": "^8.0",
+        "slim/slim": "^4.10",
+        "robmorgan/phinx": "*",
+        "symfony/yaml": "^6.0"
     }
 }
