@@ -9,7 +9,7 @@
     <link href="views/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .bg-header {
-            background-color: rgba(107, 153, 198,1) !important;
+            background-color: rgba(107, 153, 198, 1) !important;
         }
     </style>
 </head>
@@ -20,7 +20,8 @@
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">Про нас</h4>
-                    <p class="text-muted"><strong>Fish tail</strong> - это простой сокращатель ссылок, предоставляющий вам возможность не
+                    <p class="text-muted"><strong>Fish tail</strong> - это простой сокращатель ссылок, предоставляющий
+                        вам возможность не
                         только уменьшить размер большой ссылки, но и просматривать статистику переходов по ним</p>
                 </div>
             </div>
@@ -39,7 +40,46 @@
         </div>
     </div>
 </header>
-
+<main>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3">Сократи свою ссылку</h1>
+                <p class="col-lg-10 fs-4">Эй, парень, твоя ссылка слишком длинная. Мне кажется форма справа - то что
+                    тебе нужно</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-6">
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="link" name="Link[link]" placeholder="Ссылка">
+                        <label for="link">Ссылка</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="slug" name="Link[slug]" placeholder="Желаемый хвост (Можно не заполнять)">
+                        <label for="slug">Желаемый хвост (Можно не заполнять)</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Сократить!</button>
+                    <hr class="my-4">
+                    <small class="text-muted">Нажимая Сократить! Вы соглашаетесь <a href="#">с правилами использования.</a></small>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Прежде чем сокращать</h1>
+                <p class="lead">Нужно правила прочитать. А то вдруг ты злоумышленик! Не бойся, они не длинные</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>            </div>
+            <div class="col-lg-6">
+                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+</main>
 <script src="views/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
